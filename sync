@@ -15,6 +15,7 @@ repo init -q --no-repo-verify --depth=1 -u https://github.com/NusantaraProject-R
 
 
 
+
 # Local manifest
 git clone https://github.com/OmarAlCoptan/local_manifest.git --depth 1 -b nusa .repo/local_manifests
 
