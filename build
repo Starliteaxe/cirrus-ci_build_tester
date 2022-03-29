@@ -16,7 +16,7 @@ ccache -z
 make api-stubs-docs || echo no problem, we need ccache
 make system-api-stubs-docs || echo no problem we need ccache
 make test-api-stubs-docs || echo no problem, we need ccache
-brunch lavender -j10 & # dont remove that '&'
+brunch lavender & # dont remove that '&'
 sleep 185m
 kill %1
 ccache -s
@@ -43,7 +43,7 @@ tg(){
 id=914763890
 
 # compile plox
-brunch lavender -j8 &
+brunch lavender &
 sleep 185m
 kill %1
 
