@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 . build/envsetup.sh
-lunch blaze_lavender-userdebug
+lunch aosp_lavender-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -16,7 +16,7 @@ ccache -z
 make api-stubs-docs || echo no problem, we need ccache
 make system-api-stubs-docs || echo no problem we need ccache
 make test-api-stubs-docs || echo no problem, we need ccache
-brunch lavender & # dont remove that '&'
+mka bacon -j8 & # dont remove that '&'
 sleep 185m
 kill %1
 ccache -s
@@ -43,7 +43,7 @@ tg(){
 id=914763890
 
 # compile plox
-brunch lavender &
+mka bacon -j8 &
 sleep 185m
 kill %1
 
