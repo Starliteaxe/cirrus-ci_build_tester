@@ -11,7 +11,6 @@ git config --global user.email "omarcoptan9@gmail.com"
 repo init -q --no-repo-verify --depth=1 -u https://github.com/ProjectBlaze/manifest.git -b 12.1 -g default,-mips,-darwin,-notdefault
 
 
-
 # Local manifest
 git clone https://github.com/OmarAlCoptan/local_manifest.git --depth 1 -b blaze .repo/local_manifests
 
